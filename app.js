@@ -34,4 +34,9 @@ app.all('*', (req, res) => {
   });
 });
 
+// railway server welcome message on webpage
+app.get('/', (req, res) => {
+  res.status(200).json('Welcome to the server!');
+});
+
 module.exports = { app };
